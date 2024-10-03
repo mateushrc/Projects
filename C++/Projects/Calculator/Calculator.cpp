@@ -13,6 +13,8 @@ void divisao()
 
   int result {number1 / number2};
   std::cout << "\nResultado: " << result;
+  std::cin.ignore();
+  std::cin.get(); 
 }
 
 void multiplicacao()
@@ -24,6 +26,8 @@ void multiplicacao()
 
   int result {number1 * number2};
   std::cout << "\nResultado: " << result;
+  std::cin.ignore();
+  std::cin.get(); 
 }
 
 void subtracao()
@@ -35,6 +39,8 @@ void subtracao()
 
   int result {number1 - number2};
   std::cout << "\nResultado: " << result;
+  std::cin.ignore();
+  std::cin.get(); 
 }
 
 void soma()
@@ -46,18 +52,20 @@ void soma()
 
   int result {number1 + number2};
   std::cout << "\nResultado: " << result;
+  std::cin.ignore();
+  std::cin.get(); 
 }
 
 void menu()
 {
-  std::cout << "Bem Vindo a Calculadora!\n";
-  std::cout << "Escolha o que voce quer:\n";
+  std::cout << "\nBem Vindo a Calculadora!\n";
+  std::cout << "\nEscolha o que voce quer:\n";
   std::cout << "1-Soma\n";
   std::cout << "2-Subtracao\n";
   std::cout << "3-Multiplicacao\n";
   std::cout << "4-Divisao\n";
   std::cout << "0-Exit\n";
-  std::cout << "Digite Aqui: ";
+  std::cout << "\nDigite Aqui: ";
   std::cin >> result;
 
   switch (result)
